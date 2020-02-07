@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section.datepicker {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.left .month-year {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.right .month-year {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.days-of-the-week {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading {
+    color: black;
+    font-weight: 700;
+}
+
+ul.days {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.month {
+    margin: auto 0;
+    text-align: center;
+}
+
+.action-links {
+    color: brown;
+    font-size: 1.3rem;
+}
+
+.right .action-links {
+    text-align: right;
+}
