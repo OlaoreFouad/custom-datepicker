@@ -83,7 +83,7 @@ function populateMonth(month, isCurrent) {
         daysOfTheWeek.appendChild(wk);
     }
 
-    const week = document.createElement('week');
+    const week = document.createElement('div');
     week.classList.add('week');
 
 }
@@ -99,6 +99,7 @@ function setWholeMonth(y, m, d) {
 
     month.month = getMonthByName(monthIdx);
     month.monthIdx = monthIdx;
+    month.dateLiteral = `${y}-${m}-${d}`;
     month.year = bigDate.getFullYear();
     month.numberOfDays = getDaysByNumber(monthIdx, month.year);
     var weeks = {
